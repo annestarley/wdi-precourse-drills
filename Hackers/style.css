@@ -7,3 +7,18 @@ img {
   display: block;
   padding: 4px;
 }
+
+.col-1,
+.col-2 {
+  margin: 0 1.5% 24px 1.5%;
+}
+
+.col-1 {
+  width: 60%;
+  float: left;
+}
+
+.col-2 {
+  width: 30%;
+  float: right;
+}
