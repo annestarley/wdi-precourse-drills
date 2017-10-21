@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<!-- HTML -->
+<body>
+
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+<script>
+var words = [
+  "sarcophagus", "bagpipe", "squawk", "wizard", "sphinx", "mummy", "galvanize", "fjord", "esophogus"];
+
+  var word = words[Math.floor(Math.random() * words.length)];
+  word;
+
+  var answerArr = [];
+  for (var i = 0; i < word.length; i++) {
+    answerArr[i] = "_";
+  }
+
+  var remainingLetters = word.length;
+
+  while (remainingLetters > 0) {
+    alert(answerArr.join(" ") + "\nYou have " + remainingLetters.toString() + " unguessed letters remaining.");
+    var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+    if (guess === null) {
+      alert("Okay, maybe next time!");
+      break;
+    } else if (guess.length !== 1) {
+      alert("Please enter a single letter.");
+    } else {
+      for (var j = 0; j < word.length; j++) {
+        if (word[j] === guess) {
+          answerArr[j] = guess;
+          remainingLetters--;
+        }
+      }
+    }
+  }
+
+  if (answerArr.join("") === word) {
+    alert(answerArr.join(" ") + "\n Good job! The answer was " + word + ".");
+  }
+</script>
+</body>
+
+</html>
