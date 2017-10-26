@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="description">
+  <title>Anne Starley Future</title>
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<!-- HEADER -->
+<header>
+  <img class="face" src="my-face.jpg">
+  <div class="header">
+    <h1>About <span class="name">Anne</span></h2>
+    <p class="headerParagraph">Current Student at Galvanize Web Development</p>
+  </div>
+</header>
+
+<!-- BODY -->
+<body>
+  <div class="container">
+    <h3 class="left">Future Work</h3>
+    <p>I am excited to begin join Galvanize's Web Development Immersive October cohort. I want to learn as much as I can and would love to gain the skills necessary for a job as a developer.</p>
+    <img class="firstGif" src="everyone.gif">
+    <p>Let me use some <i>Freaks and Geeks</i> memes to describe how I forsee my time as a Galvanize student. Click on the buttons below for more fun.</p>
+    <div class="grid-button">
+      <button class="zero"><h3>Week 0</h3></button>
+    </div>
+    <div class="grid-button one">
+      <button><h3>Week 1</h3></button>
+    </div>
+    <div class="grid-button two">
+      <button><h3>Week 5</h3></button>
+    </div>
+    <div class="grid-button three">
+      <button><h3>Lunch</h3></button>
+    </div>
+    <div class="grid-button four">
+      <button><h3>Mid Semester</h3></button>
+    </div>
+    <div class="grid-button five">
+      <button><h3>3/4 Through</h3></button>
+    </div>
+    <div class="grid-button six">
+      <button><h3>1st Breakdown</h3></button>
+    </div>
+    <div class="grid-button seven">
+      <button><h3>2nd Breakdown</h3></button>
+    </div>
+    <div class="grid-button eight">
+      <button><h3>3rd Breakdown</h3></button>
+    </div>
+    <div class="grid-button nine">
+      <button><h3>Graduation</h3></button>
+    </div>
+    <br>
+    <a href="#top"><u>Back to the top of the page.</u></a>
+    <br>
+  </div>
+  <h3 class="homeLink"><a href="index.html">Back to Home</a></h3>
+</body>
+
+<!-- FOOTER -->
+<footer>
+<p>Created by Anne Starley.</p>
+<p>Background image found at <a href="https://www.freepik.com/free-vector/grey-linen-texture-background_835399.htm">Free Pik</a></p>
+</footer>
+
+<script type="text/javascript" src="jquery-3.2.1.js"></script>
+<script type="text/javascript">
+// $(".zero").on('click', function() {
+//   $('.firstGif').slideToggle();
+// })
+$('.zero').on('click', function() {
+  var text = $('<h3>Week 0<h3>')
+  var img = $('<img src="week-0.gif" alt="week 0" class="gif">');
+  $('.zero').after(img);
+  $('.zero').after(text);
+  $('.zero').remove();
+});
+
+$('.one').on('click', function() {
+  var text = $('<h3>Week 1</h3>')
+  var img = $('<img src="week-1.gif" alt="week 1" class="gif">');
+  $('.one').after(img);
+  $('.one').after(text);
+  $('.one').remove();
+});
+
+$('.two').on('click', function() {
+  var text = $('<h3>Week 5</h3>')
+  var img = $('<img src="week-5.gif" alt="week 5" class="gif">');
+  $('.two').after(img);
+  $('.two').after(text);
+  $('.two').remove();
+});
+
+$('.three').on('click', function() {
+  var text = $('<h3>Lunch</h3>')
+  var img = $('<img src="lunch.gif" alt="lunch" class="gif">');
+  $('.three').after(img);
+  $('.three').after(text);
+  $('.three').remove();
+});
+
+$('.four').on('click', function() {
+  var text = $('<h3>Mid Semester</h3>')
+  var img = $('<img src="mid-semester.gif" alt="Mid Semester" class="gif">');
+  $('.four').after(img);
+  $('.four').after(text);
+  $('.four').remove();
+});
+
+$('.five').on('click', function() {
+  var text = ('<h3>3/4 Through</h3>')
+  var img = $('<img src="3-4-through.gif" alt="3/4 through" class="gif">');
+  $('.five').after(img);
+  $('.five').after(text);
+  $('.five').remove();
+});
+
+$('.six').on('click', function() {
+  var text = ('<h3>1st Breakdown</h3>')
+  var img = $('<img src="breakdown-1.gif" alt="1st breakdown" class="gif">');
+  $('.six').after(img);
+  $('.six').after(text);
+  $('.six').remove();
+});
+
+$('.seven').on('click', function() {
+  var text = ('<h3>2nd Breakdown</h3>')
+  var img = $('<img src="breakdown-2.gif" alt="2nd breakdown" class="gif">');
+  $('.seven').after(img);
+  $('.seven').after(text);
+  $('.seven').remove();
+});
+
+$('.eight').on('click', function() {
+  var text = ('<h3>3rd Breakdown</h3>')
+  var img = $('<img src="breakdown-3.gif" alt="3rd breakdown" class="gif">');
+  $('.eight').after(img);
+  $('.eight').after(text);
+  $('.eight').remove();
+});
+
+$('.nine').on('click', function() {
+  var text = ('<h3>Graduation</h3>')
+  var img = $('<img src="graduation.gif" alt="graduation" class="gif">');
+  $('.nine').after(img);
+  $('.nine').after(text);
+  $('.nine').remove();
+});
+
+</script>
+</html>

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+body {
+  background: #2a2a2a;
+  font-family: 'Pangolin', cursive;
+}
+
+/* HEADER */
+
+.face {
+  width: 150px;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  border: 5px solid #d3d3d3;
+}
+
+.header {
+  background: url(header-background.jpg);
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 75%;
+  margin-top: -70px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 100px;
+  padding-bottom: 15px;
+}
+
+h1, .headerParagraph {
+  text-align: center;
+  color: black;
+}
+
+.name {
+  display: inline;
+  font-weight: bold;
+  color: #3CB371;
+}
+
+.hightlight {
+  color: #00FA9A;
+}
+
+/* BODY */
+
+.grid {
+  display: Flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-button {
+  flex: 0 0 15%;
+  text-align: center;
+  margin: 10px;
+}
+
+.container {
+  flex: 0 0 90%;
+  text-align: left;
+  margin: 10px;
+  padding: 2px;
+  color: white;
+  background-color: #2a2a2a;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: #2a2a2a;
+  width: 100%;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.78), 0 17px 50px 0 rgba(0, 0, 0, 0.60);
+  color: #3CB371;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3CB371;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.link {
+  padding-top: 75px;
+  text-align: right;
+}
+
+.homeLink {
+  padding-top: 75px;
+  text-align: center;
+}
+
+footer {
+  padding-top: 300px;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+}
+
+.firstGif {
+  display: block;
+  margin: auto;
+  margin-top: 75px;
+  border: 5px solid #d3d3d3;
+}
+
+.gif {
+  display: block;
+  margin: auto;
+  border: 5px solid #d3d3d3;
+  height: 200px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}

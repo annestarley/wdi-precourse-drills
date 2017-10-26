@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="description">
+  <title>Anne Starley</title>
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<!-- HEADER -->
+<header>
+  <img class="face" src="my-face.jpg">
+  <div class="header">
+    <h1>About <span class="name">Anne<span id="last">!</span></span></h2>
+    <p class="headerParagraph">Current Student at Galvanize Web Development</p>
+  </div>
+</header>
+
+<!-- BODY -->
+<body>
+  <div class="grid">
+    <div class="grid-button Intro">
+      <button><h3><a href="#Intro">Introduction</a></h3></button>
+    </div>
+    <div class="grid-button">
+      <button><h3><a href="#Education">Education</a></h3></button>
+    </div>
+    <div class="grid-button">
+      <button><h3><a href="#Work">Work</a></h3></button>
+    </div>
+    <div class="grid-button">
+      <button><h3><a href="#Hobbies">Hobbies</a></h3></button>
+    </div>
+    <div class="container">
+      <h3 id="Intro" class="left">Introduction</h3>
+      <p>I have been living in Washington for just over a year now and have recently moved to an apartment in Seattle. I am excited to be joining this Galvanize cohort and can't wait to get started.</p>
+      <br>
+      <h3 id="Education" class="left">Education</h3>
+      <p>I earned a BS in Applied Physics at Utah State University where I also minored in Chemistry. While at USU, I worked with the Material Physics Group where I researched electron depth penetration in varying materials and the resolution of pulsed-electro acoustics.</p>
+      <br>
+      <h3 id="Work" class="left">Work</h3>
+      <p>I worked for Utah State University's Material Physics Group as a research assistant from 2014-2016. Upon arriving in Washington, I worked a four month contract with Amazon.com as a Risk Analyst. I then worked in Bellevue, WA as a Fraud Analyst for Momentum Ventures for 6 months.</p>
+      <br>
+      <h3 id="Hobbies" class="left">Hobbies</h3>
+      <p>I will play any sport there is and I <i>love</i> soccer (although its been a while since I last played). I enjoy and participate tennis, gymnastics, football, hiking, biking, and climbing with varying degrees of success. I took piano lessons for 10 years, plus, I own a ukulele and know how to play 1/2 songs. I am a big movies and books fan. I have a special fondness for musicals and action movies. Oh, and chocolate!</p>
+      <br>
+      <a href="#top"><u>Back to the top of the page.</u></a>
+      <br>
+      <h3 class="link"><a href="future.html">Future Plans --></a>
+    </div>
+  </div>
+
+</body>
+
+<!-- FOOTER -->
+<footer>
+  <p>Created by Anne Starley.</p>
+  <p>Background image found at <a href="https://www.freepik.com/free-vector/grey-linen-texture-background_835399.htm">Free Pik</a></p>
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script type="text/javascript" src="jquery-3.2.1.js"></script>
+<script type="text/javascript">
+  //  $(function(){
+  //     alert("My First Jquery Test");
+  //  });
+    $(document).ready(function() {
+  $('.header').on('mouseenter', function() {
+    $(this).find('#last').slideToggle();
+  });
+
+  $('.Intro').on('mousenter', function() {
+    $('.container').find('#Intro').slideToggle()
+  })
+});
+
+</script>
+</body>
+
+</html>
